@@ -448,8 +448,6 @@ function prev(o){
 }
 function update_prev(){
 	if (PREV==null){return}
-	for (var c of sb_right.childNodes){
-	}
 	curr_sel.pos(parseInt(sb_right.querySelectorAll(".r-pos-x")[0].value),parseInt(sb_right.querySelectorAll(".r-pos-y")[0].value),parseInt(sb_right.querySelectorAll(".r-pos-z")[0].value))
 	curr_sel.rot(parseInt(sb_right.querySelectorAll(".r-rot-x")[0].value)*(Math.PI/180),parseInt(sb_right.querySelectorAll(".r-rot-y")[0].value)*(Math.PI/180),parseInt(sb_right.querySelectorAll(".r-rot-z")[0].value)*(Math.PI/180))
 	curr_sel.size(parseInt(sb_right.querySelectorAll(".r-size-x")[0].value),parseInt(sb_right.querySelectorAll(".r-size-y")[0].value),parseInt(sb_right.querySelectorAll(".r-size-z")[0].value))
